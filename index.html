@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrapmin.css">;
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Contact app</title>
+</head>
+<body>
+  <!-- site header started -->
+  <header class="site-header"></header>
+  <!-- site header end -->
+  <!-- site main started -->
+  <main class="site-main">
+    <!-- hero section started -->
+    <section class="hero">
+      <div class="container">
+        <h1 class="hero__title text-center mb-5">
+          Contact App
+        </h1>
+        <div class="hero__wrapper">
+          <form class="hero__form form js-contact-form form-control d-flex flex-column w-50 h-100 gap-5 p-5 bg-light-subtle shadow">
+            <div class="hero__input-box d-flex flex-column gap-3">
+              <span class="hero__input-title fs-4 fw-medium text-success">
+                Name:
+              </span>
+              <input class="form__name-input js-name-input form-control p-2 border-black border-opacity-75 border-3 rounded shadow" type="text" name="first_name" aria-label="Please enter your name" placeholder="Enter your name" required>
+            </div>
+            <div class="hero__input-box d-flex flex-column gap-3">
+              <span class="hero__phone-input-title fs-4 fw-medium text-success">
+                Phone number:
+              </span>
+              <input class="form-phone-input js-phone-input form-control p-2 border-black border-opacity-75 border-3 rounded shadow" type="tel" name="phone" aria-label="Please enter your phone number" placeholder="+998 xx xxx-xx-xx" required>
+            </div>
+            <div class="hero__input-box d-flex flex-column gap-3">
+              <span class="hero__select-title fs-4 fw-medium text-success">
+                Choose a type:
+              </span>
+              <select class="form__select js-form-select form-select p-2 border-3 border-black border-opacity-75 shadow" name="user_choose">
+                <option value="Family">Family</option>
+                <option value="Work">Work</option>
+                <option value="Friends">Friends</option>
+              </select>
+            </div>
+            <button class="form-btn btn btn-success fs-5" type="submit">Submit</button>
+          </form>
+          <div class="hero__info-wrapper d-flex flex-column gap-5">
+            <div class="hero__info-btn-wrapper js-btn-group btn-group d-flex justify-content-between gap-2 subtle p-2">
+              <button class="hero__btn js-all-btn btn btn-dark w-25 rounded" type="button">
+                All
+                <span class="js-all-btn-count">
+                  0
+                </span>
+              </button>
+              <button class="hero__btn js-family-btn btn btn-success w-25 rounded" type="button">
+                Family
+                <span class="js-family-btn-count">
+                  0
+                </span>
+              </button>
+              <button class="hero__btn js-work-btn btn btn-warning w-25 rounded" type="button">
+                Work
+                <span class="js-work-btn-count">
+                  0
+                </span>
+              </button>
+              <button class="hero__btn js-friends-btn btn btn-primary w-25 rounded" type="button">
+                Friends
+                <span class="js-friends-btn-count">
+                  0
+                </span>
+              </button>
+            </div>
+            <div class="hero__sort-btn-wrapper d-flex justify-content-around gap-5">
+              <button class="hero__sort-btn js-az-btn btn btn-success w-50" type="button">A-Z</button>
+              <button class="hero__sort-btn js-za-btn btn btn-success w-50" type="button">Z-A</button>
+            </div>
+            <ul class="hero__list js-hero-list"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- hero section end -->
+  </main>
+  <!-- site main end -->
+  <!-- site footer started -->
+  <footer class="site-footer"></footer>
+  <!-- site footer end -->
+  <script src="./js/main.js"></script>
+</body>
+</html>
